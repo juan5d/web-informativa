@@ -1,0 +1,331 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+@font-face {
+	font-weight: normal;
+	font-style: normal;
+	font-family: 'codropsicons';
+	src:url('../fonts/codropsicons/codropsicons.eot');
+	src:url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/codropsicons/codropsicons.woff') format('woff'),
+		url('../fonts/codropsicons/codropsicons.ttf') format('truetype'),
+		url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
+}
+
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.clearfix:before, .clearfix:after { content: ''; display: table; }
+.clearfix:after { clear: both; }
+
+html, body, .pagewrap {
+	height: 100%;
+}
+
+body {
+	background: #4fc3f7;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 1.25;
+	font-family: 'Lato', Arial, sans-serif;
+}
+
+.container {
+	min-height: 100%;
+}
+
+a {
+	color: rgba(0,0,0,0.25);
+	font-weight: bold;
+	text-shadow: 0 0 rgba(0,0,0,0);
+	text-decoration: none;
+	outline: none;
+}
+
+a:hover, a:focus {
+	color: rgba(0,0,0,0.6);
+}
+
+.codrops-header {
+	margin: 0 auto;
+	padding: 2em;
+	text-align: center;
+}
+
+.codrops-header h1 {
+	margin: 0;
+	font-weight: 300;
+	font-size: 2.5em;
+}
+
+.codrops-header h1 span {
+	display: block;
+	padding: 0 0 0.6em 0.1em;
+	font-size: 0.6em;
+	opacity: 0.7;
+}
+
+/* To Navigation Style */
+.codrops-top {
+	width: 100%;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 0.69em;
+	line-height: 2.2;
+}
+
+.codrops-top a {
+	display: inline-block;
+	padding: 0 1em;
+	text-decoration: none;
+	letter-spacing: 1px;
+}
+
+.codrops-top span.right {
+	float: right;
+}
+
+.codrops-top span.right a {
+	display: block;
+	float: left;
+}
+
+.codrops-icon:before {
+	margin: 0 4px;
+	text-transform: none;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-family: 'codropsicons';
+	line-height: 1;
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+.codrops-icon-drop:before {
+	content: "\e001";
+}
+
+.codrops-icon-prev:before {
+	content: "\e004";
+}
+
+section {
+	padding: 3em 1em 10em;
+	text-align: center;
+	clear: both;
+}
+
+section h2 {
+	font-size: 2.6em;
+	font-weight: 300;
+	padding: 4em 0 0.4em;
+}
+
+section p {
+	font-size: 1.5em;
+	line-height: 1.5;
+	margin-top: 0;
+}
+
+.related > a {
+	border: 1px solid rgba(0,0,0,0.3);
+	display: inline-block;
+	text-align: center;
+	margin: 20px 10px;
+	padding: 25px;
+}
+
+.related a:hover {
+	border-color: #fff;
+	color: #fff;
+}
+
+.related a img {
+	max-width: 100%;
+	opacity: 0.8;
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+}
+
+.related a:hover img,
+.related a:active img {
+	opacity: 1;
+}
+
+.related a h3 {
+	margin: 0;
+	padding: 0.5em 0 0.3em;
+	max-width: 300px;
+	text-align: left;
+}
+
+.columns {
+	max-width: 1200px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+.column {
+	width: 50%;
+	padding: 0 2em;
+	float: left;
+}
+
+/* Demo links */
+.codrops-demos {
+	text-align: right;
+}
+
+.codrops-demos a {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin: 15px;
+	padding: 0 0 5px;
+	display: inline-block;
+	border-bottom: 3px solid rgba(0,0,0,0.25);
+}
+
+.codrops-demos a:hover,
+.codrops-demos a:focus,
+.codrops-demos a.current-demo {
+	color: #fff;
+	border-color: #fff;
+}
+
+.pageload-link {
+	padding: 13px 20px;
+	color: #fff;
+	background: rgba(0,0,0,0.25);
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 0.6em;
+	white-space: nowrap;
+}
+
+.pageload-link:hover {
+	color: #fff;
+	background: rgba(0,0,0,0.2);
+}
+
+#page-2 {
+	background: #6cc88a;
+}
+
+@media screen and (max-width: 40em) {
+
+	.column {
+		width: 100%;
+		float: none;
+		padding: 2em;
+		text-align: center;
+	}
+
+	.codrops-demos {
+		text-align: center;
+	}
+
+}
+
+@media screen and (max-width: 25em) {
+
+	.codrops-icon span {
+		display: none;
+	}
+
+}
+/*
+* Base Template
+* Combines HTML5 Boilerplate & Boostrap. Includes some basic templating.
+* Authored by Stephen Shaw (shshaw@gmail.com)
+*/
+
+/* @group Basics */
+
+
+
+.main-header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 20%;
+  background: #eee;
+  padding: 1em;
+}
+
+.main-header__nav {
+  border-top: solid 1px #ccc;
+  margin: 1em -1em;
+}
+
+.main-header__nav a {
+  display: block;
+  padding: 0.5em 1em;
+  border-bottom: solid 1px #ddd;
+}
+
+.main-header__nav a:hover,
+.main-header__nav a:focus {
+  color: #eee;
+  background: #da0d25;
+}
+
+@media (max-width: 800px) {
+  body { padding: 0; }
+
+  .main-header {
+    position: relative;
+    width: 100%;
+  }
+
+  .main-header__nav a { display: inline-block; border: none; }
+}
+
+.intro {
+  padding: 4em 2em;
+}
+
+.demo {
+  padding: 6em 2em;
+}
+
+.demo h2 {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 1em;
+}
+
+.demo .flipster {
+  margin: 0 -2em;
+}
+
+.code {
+  display: block;
+  background: #eee;
+  padding: 1em;
+  border-radius: 1em;
+  margin: 2em auto;
+  max-width: 30em;
+  font-size: 0.8em;
+  width: fit-content;
+  white-space: pre-wrap;
+}
+
+.button {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 0;
+  background-color: #da0d25;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: #FFF;
+  text-shadow: none;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 0;
+  transition: all 300ms ease;
+}
+
+.button:hover,
+.button:focus {
+  color: #7a0715;
+  background: #f22840;
+}

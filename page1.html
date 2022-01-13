@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link rel="stylesheet" type="text/css" href="css/default.css" />
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/snap.svg-min.js"></script>
+    <link rel="stylesheet" href="css/jquery.flipster.min.css">
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.flipster.min.js"></script>
+
+
+    <title>ISACOL S.A.S.</title>
+    <!--
+Elegance Template
+https://templatemo.com/tm-528-elegance
+-->
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+
+    <link rel="stylesheet" type="text/css" href="css/fullpage.min.css">
+
+    <link rel="stylesheet" type="text/css" href="css/owl.carousel.css">
+
+    <link rel="stylesheet" href="css/animate.css">
+
+    <link rel="stylesheet" href="css/isacol.css">
+
+    <link rel="stylesheet" href="css/responsive.css">
+    <meta 
+     name='viewport' 
+     content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' 
+/>
+
+</head>
+
+<body>
+    <div id="video" class="pagewrap">
+
+        <div class="preloader">
+            <div class="preloader-bounce">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <header id="header">
+            <div class="container-fluid">
+                <div class="navbar">
+                    <a href="#slide01" id="logo" title="Isacol S.A.S.">
+                        <img id="logo-img" src="images/isacol_white.svg" />
+                    </a>
+                    <div class="navigation-row">
+                        <nav id="navigation">
+                            <button type="button" class="navbar-toggle"> <i class="fa fa-bars"></i> </button>
+                            <div class="nav-box navbar-collapse">
+                                <ul class="navigation-menu nav navbar-nav navbars" id="nav">
+                                    <!--li data-menuanchor="slide01" class="active"><a href="#slide01">Home</a></li -->
+                                    <li data-menuanchor="none"><a class="link" href="#slide01" onclick="prueba(1)">About
+                                            Us</a></li>
+                                    <li data-menuanchor="none"><a href="#" onclick="prueba(2)">Services</a></li>
+                                    <li data-menuanchor="none"><a href="#" onclick="prueba(3)">Port Information</a></li>
+                                    <li data-menuanchor="none"><a href="#" onclick="prueba(4)">News</a></li>
+                                    <li data-menuanchor="none"><a href="#" onclick="prueba(5)">Gallery</a></li>
+                                    <li data-menuanchor="slide07"><a href="#slide01" onclick="prueba(6)">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        
+        <div class="d-none d-sm-block ">
+            <video autoplay muted loop id="myVideo">
+                <source src="images/cover1920x1080.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="d-block d-sm-none">
+            <video autoplay muted loop id="myVideoMov">
+                <source src="images/cover1080x1920.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="slides">
+
+            <div class="slide s1" >
+
+
+                <div id="fullpage" class="fullpage-default">
+
+                    <div class="section animated-row" data-section="slide01">
+                        <div class="section-inner">
+                            <div class="welcome-box">
+
+                                <h1 id="typer" class="welcome-title animate" data-animate="fadeInUp"></h1>
+
+
+
+                                <div class="scroll-down next-section animate" data-animate="fadeInUp"><img
+                                        src="images/mouse-scroll.png" alt=""><span>Scroll Down</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section animated-row" data-section="slide02">
+                        <div class="section-inner">
+                            <div class="row justify-content-center">
+                                <div class="col-12 col-sm-4">
+                                    <div class="service-box">
+                                        <span class="service-icon"><i class="fa fa-clock-o"
+                                                aria-hidden="true"></i></span>
+                                        <h3>World and local time</h3>
+                                        <table style="width: 100%">
+                                            <tr>
+                                                <td style="border: 1px solid">
+                                                    <span id="londonDate"></span>
+                                                    <br />
+                                                    <span id="londonTime"></span>
+                                                    <br />
+                                                    London
+                                                </td>
+                                                <td style="border: 1px solid">
+                                                    <span id="tokyoDate"></span>
+                                                    <br />
+                                                    <span id="tokyoTime"></span>
+                                                    <br />
+                                                    Tokyo
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="border: 1px solid">
+                                                    <span id="newyorkDate"></span>
+                                                    <br />
+                                                    <span id="newyorkTime"></span>
+                                                    <br />
+                                                    New York
+                                                </td>
+                                                <td style="border: 1px solid">
+                                                    <span id="bogotaDate"></span>
+                                                    <br />
+                                                    <span id="bogotaTime"></span>
+                                                    <br />
+                                                    BogotÃ¡
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-4">
+                                    <div class="service-box">
+                                        <span class="service-icon"><i class="fa fa-globe" aria-hidden="true"></i></span>
+                                        <h3>Local Weather</h3>
+                                        <table style="width: 100%">
+                                            <tr>
+                                                <td style="border: 1px solid">City</td>
+                                                <td style="border: 1px solid">Temperature</td>
+                                                <td style="border: 1px solid">Humidity</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="border: 1px solid">Cartagena</td>
+                                                <td style="border: 1px solid"><span id="ctgWeather"></span></td>
+                                                <td style="border: 1px solid"><span id="ctgHumidity"></span></td>
+                                            </tr>
+                                            <tr>
+                                                <td style="border: 1px solid">Barranquilla</td>
+                                                <td style="border: 1px solid"><span id="barWeather"></span></td>
+                                                <td style="border: 1px solid"><span id="barHumidity"></span></td>
+                                            </tr>
+                                            <tr>
+                                                <td style="border: 1px solid">BogotÃ¡</td>
+                                                <td style="border: 1px solid"><span id="bogWeather"></span></td>
+                                                <td style="border: 1px solid"><span id="bogHumidity"></span></td>
+                                            </tr>
+                                            <tr>
+                                                <td style="border: 1px solid">Buenaventura</td>
+                                                <td style="border: 1px solid"><span id="bueWeather"></span></td>
+                                                <td style="border: 1px solid"><span id="bueHumidity"></span></td>
+                                            </tr>
+                                            <tr>
+                                                <td style="border: 1px solid">Riohacha</td>
+                                                <td style="border: 1px solid"><span id="rioWeather"></span></td>
+                                                <td style="border: 1px solid"><span id="rioHumidity"></span></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-4">
+                                    <div class="service-box">
+                                        <span class="service-icon"><i class="fa fa-dollar"
+                                                aria-hidden="true"></i></span>
+                                        <h3>Crude Oil Price</h3>
+                                        <table style="width: 100%">
+                                            <tr>
+                                                <td style="border: 1px solid">Type</td>
+                                                <td style="border: 1px solid">Price</td>
+                                                <td style="border: 1px solid">Change</td>
+                                                <td style="border: 1px solid">%</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="border: 1px solid">WTI CRUDE</td>
+                                                <td style="border: 1px solid"><span id="wtiPrice"></span></td>
+                                                <td style="border: 1px solid"><span id="wtiChange"></span></td>
+                                                <td style="border: 1px solid"><span id="wtiPct"></span></td>
+                                            </tr>
+                                            <tr>
+                                                <td style="border: 1px solid">BRENT CRUDE</td>
+                                                <td style="border: 1px solid"><span id="brentPrice"></span></td>
+                                                <td style="border: 1px solid"><span id="brentChange"></span></td>
+                                                <td style="border: 1px solid"><span id="brentPct"></span></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section animated-row" data-section="slide03">
+                        <div class="section-inner">
+                            <div class="row justify-content-center" style="vertical-align: middle;">
+                                <div class="col-6 col-sm-4">
+                                    <div class="akn-box">
+                                        <img src="images/5-amcham.png" style="height: 100%" />
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-4">
+                                    <div class="akn-box">
+                                        <img src="images/2-bimco.png" style="height: 100%" />
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-4">
+                                    <div class="akn-box">
+                                        <img src="images/3-intertanko.png" style="height: 100%" />
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-4">
+                                    <div class="akn-box">
+                                        <img src="images/1-iso.png" style="height: 100%" />
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-4">
+                                </div>
+                                <div class="col-6 col-sm-4">
+                                    <div class="akn-box">
+                                        <img src="images/6-basc.svg" style="height: 100%" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section animated-row" data-section="slide03">
+                        <div class="section-inner">
+                            <div class="row justify-content-center" style="vertical-align: middle;">
+                                <h4>Puertos</h4>
+                                <div id="carousel">
+                                    <ul class="flip-items">
+                                        <li data-flip-title="Compas" data-flip-category="Barranquilla" style="width:300px;height:300px">
+                                            <img src="images/puertos/Barranquilla/Compas.jpg" style="object-fit: contain;width: 100%;height: 300px;">
+                                            
+                                        </li>
+                                        <li data-flip-title="Razzmatazz" data-flip-category="Barranquilla" style="width:300px;height:300px">
+                                            <img src="images/puertos/Barranquilla/Michellmar.jpg" style="object-fit: contain;width: 100%;height: 300px;">
+                                        </li>
+                                        <li data-flip-title="Razzmatazz" data-flip-category="Barranquilla" style="width:300px;height:300px">
+                                            <img src="images/puertos/Barranquilla/Palermo.jpg" style="object-fit: contain;width: 100%;height: 300px;">
+                                        </li>
+                                        <li data-flip-title="Razzmatazz" data-flip-category="Barranquilla" style="width:300px;height:300px">
+                                            <img src="images/puertos/Barranquilla/Port Magdalena.jpg" style="object-fit: contain;width: 100%;height: 300px;">
+                                        </li>
+                                        <li data-flip-title="Compas" data-flip-category="Buenaventura" style="width:300px;height:300px">
+                                            <img src="images/puertos/Buenaventura/Sociedad Portuaria Regional de Buenaventura.jpg" style="object-fit: contain;width: 100%;height: 300px;">
+                                        </li>
+                                        <li data-flip-title="Razzmatazz" data-flip-category="Cartagena" style="width:300px;height:300px">
+                                            <img src="images/puertos/Cartagena/Algranel Terminal.jpg" style="object-fit: contain;width: 100%;height: 300px;">
+                                        </li>
+                                        <li data-flip-title="Razzmatazz" data-flip-category="Cartagena" style="width:300px;height:300px">
+                                            <img src="images/puertos/Cartagena/LPG Terminal.jpg" style="object-fit: contain;width: 100%;height: 300px;">
+                                        </li>
+                                        <li data-flip-title="Razzmatazz" data-flip-category="Cartagena" style="width:300px;height:300px">
+                                            <img src="images/puertos/Cartagena/Nestor Pineda Terminal.jpg" style="object-fit: contain;width: 100%;height: 300px;">
+                                        </li>
+                                        <li data-flip-title="Compas" data-flip-category="Cartagena" style="width:300px;height:300px">
+                                            <img src="images/puertos/Cartagena/Oil Tanking.jpg" style="object-fit: contain;width: 100%;height: 300px;">
+                                        </li>
+                                        <li data-flip-title="Razzmatazz" data-flip-category="Cartagena" style="width:300px;height:300px">
+                                            <img src="images/puertos/Cartagena/Puerto Bahia Terminal.jpg" style="object-fit: contain;width: 100%;height: 300px;">
+                                        </li>
+                                        <li data-flip-title="Razzmatazz" data-flip-category="Cartagena" style="width:300px;height:300px">
+                                            <img src="images/puertos/Cartagena/Puerto Mamonal.jpg" style="object-fit: contain;width: 100%;height: 300px;">
+                                        </li>
+                                        <li data-flip-title="Razzmatazz" data-flip-category="Cartagena" style="width:300px;height:300px">
+                                            <img src="images/puertos/Cartagena/Refineria Terminal.jpg" style="object-fit: contain;width: 100%;height: 300px;">
+                                        </li>
+                                        <li data-flip-title="Razzmatazz" data-flip-category="Cartagena" style="width:300px;height:300px">
+                                            <img src="images/puertos/Cartagena/Sociedad Portuaria de Olefinas y Derivados.jpg" style="object-fit: contain;width: 100%;height: 300px;">
+                                        </li>
+                                        <li data-flip-title="Razzmatazz" data-flip-category="Cartagena" style="width:300px;height:300px">
+                                            <img src="images/puertos/Cartagena/Vopak.jpg" style="object-fit: contain;width: 100%;height: 300px;">
+                                        </li>
+                                        <li data-flip-title="Compas" data-flip-category="Coveñas" style="width:300px;height:300px">
+                                            <img src="images/puertos/Coveñas/TLU 1.jpg" style="object-fit: contain;width: 100%;height: 300px;">
+                                        </li>
+                                        <li data-flip-title="Razzmatazz" data-flip-category="Coveñas" style="width:300px;height:300px">
+                                            <img src="images/puertos/Coveñas/TLU 2.jpg" style="object-fit: contain;width: 100%;height: 300px;">
+                                        </li>
+                                        <li data-flip-title="Razzmatazz" data-flip-category="Coveñas" style="width:300px;height:300px">
+                                            <img src="images/puertos/Coveñas/TLU 3.jpg" style="object-fit: contain;width: 100%;height: 300px;">
+                                        </li>
+                                        <li data-flip-title="Razzmatazz" data-flip-category="Puerto Bolivar" style="width:300px;height:300px">
+                                            <img src="images/puertos/Puerto Bolivar/Coal Pier.jpg" style="object-fit: contain;width: 100%;height: 300px;">
+                                        </li>
+
+                                        <li data-flip-title="Razzmatazz" data-flip-category="Puerto Bolivar" style="width:300px;height:300px">
+                                            <img src="images/puertos/Puerto Bolivar/Commodities Pier.jpg" style="object-fit: contain;width: 100%;height: 300px;">
+                                        </li>
+                                        <li data-flip-title="Razzmatazz" data-flip-category="Santa Marta" style="width:300px;height:300px">
+                                            <img src="images/puertos/Santa Marta/Carbosan.jpg" style="object-fit: contain;width: 100%;height: 300px;">
+                                        </li>
+                                        <li data-flip-title="Compas" data-flip-category="Santa Marta" style="width:300px;height:300px">
+                                            <img src="images/puertos/Santa Marta/Ecopetrol SPM Pozos Colorados.jpg" style="object-fit: contain;width: 100%;height: 300px;">
+                                        </li>
+                                        <li data-flip-title="Razzmatazz" data-flip-category="Santa Marta" style="width:300px;height:300px">
+                                            <img src="images/puertos/Santa Marta/Puerto Drumond.jpg" style="object-fit: contain;width: 100%;height: 300px;">
+                                        </li>
+                                        <li data-flip-title="Razzmatazz" data-flip-category="Santa Marta" style="width:300px;height:300px">
+                                            <img src="images/puertos/Santa Marta/Puerto Nuevo.jpg" style="object-fit: contain;width: 100%;height: 300px;">
+                                        </li>
+                                        <li data-flip-title="Razzmatazz" data-flip-category="Santa Marta" style="width:300px;height:300px">
+                                            <img src="images/puertos/Santa Marta/Sociedad Portuaria de Santa Marta.jpg" style="object-fit: contain;width: 100%;height: 300px;">
+                                        </li>
+                                        <li data-flip-title="Razzmatazz" data-flip-category="Tumaco" style="width:300px;height:300px">
+                                            <img src="images/puertos/Tumaco/Ecopetrol Sea Berth.jpg" style="object-fit: contain;width: 100%;height: 300px;">
+                                        </li>
+                                        
+                                        
+                                    </ul>
+                                </div>
+
+                                <script>
+                                    var carousel = $("#carousel").flipster({
+                                        style: 'carousel',
+                                        spacing: -0.5,
+                                        nav: false,
+                                        buttons: true,
+                                        scrollwheel: false,
+                                    });
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section animated-row" data-section="slide07">
+                        <div class="section-inner">
+                            <div class="row justify-content-center">
+                                <div class="col-md-7 wide-col-laptop">
+                                    <div class="title-block animate" data-animate="fadeInUp">
+                                        <h2>CONTACT US</h2>
+                                    </div>
+                                    <div class="contact-section">
+                                        <div class="row">
+                                            <div class="col-md-6 animate" data-animate="fadeInUp">
+                                                <div class="contact-box">
+                                                    <div class="contact-row">
+                                                        <i class="fa fa-map-marker"></i> ISACOL S.A.S. SHIP AGENTS
+                                                    </div>
+                                                    <div class="contact-row">
+                                                        <i class="fa fa-map-marker"></i> Bocagrande, Cr 3 #6A-100,
+                                                        Edificio Torre Empresarial ProtecciÃ³n Of 10-01
+                                                    </div>
+                                                    <div class="contact-row">
+                                                        <i class="fa fa-phone"></i>
+                                                        Phones: +57 5 665 5100 | +57 5 665 2500 | +57 5 665 6990
+                                                        <br>
+                                                        Fax: +57 5 665 5569
+                                                    </div>
+                                                    <div class="contact-row">
+                                                        <i class="fa fa-envelope"></i>
+                                                        operations@isacol.com
+                                                        <br />
+                                                        alternate email: isacolctg@gmail.com
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 animate" data-animate="fadeInUp">
+                                                <form id="ajax-contact" method="post" action="#">
+                                                    <div class="input-field">
+                                                        <input type="text" class="form-control" name="name" id="name"
+                                                            required placeholder="Name">
+                                                    </div>
+                                                    <div class="input-field">
+                                                        <input type="email" class="form-control" name="email" id="email"
+                                                            required placeholder="Email">
+                                                    </div>
+                                                    <div class="input-field">
+                                                        <input type="subject" class="form-control" name="subject"
+                                                            id="subject" required placeholder="Subject">
+                                                    </div>
+                                                    <div class="input-field">
+                                                        <textarea class="form-control" name="message" id="message"
+                                                            required placeholder="Message"></textarea>
+                                                    </div>
+                                                    <button class="btn" type="submit">Submit</button>
+                                                </form>
+                                                <div id="form-messages" class="mt-3"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+        
+                ejemplo
+            </div>
+            <div class="slide" style="place-self: center;
+            z-index: 10;
+            background: url(images/mar_1920x1080.jpg);
+            
+            white-space: pre-line;
+            overflow: scroll;">
+            
+                <div  class="fullpage-default">
+
+                   
+
+                    
+
+                    <div class=" animated-row" >
+                        <div class="section-inner">
+                            <div class="row justify-content-center" >
+                                <h3>Puertos</h3>
+                                <div id="carousel2">
+                                    
+                                    <ul class="flip-items">
+                                        <li data-flip-title="Compas" data-flip-category="Barranquilla" style="width:300px;height:300px">
+                                            <img src="images/puertos/Barranquilla/Compas.jpg" style="object-fit: contain;width: 100%;height: 300px;">
+                                        </li>
+                                        <li data-flip-title="Michellmar" data-flip-category="Barranquilla" style="width:300px;height:300px">
+                                            <img src="images/puertos/Barranquilla/Michellmar.jpg" style="object-fit: contain;width: 100%;height: 300px;">
+                                        </li>
+                                        <li data-flip-title="Palermo" data-flip-category="Barranquilla" style="width:300px;height:300px">
+                                            <img src="images/puertos/Barranquilla/Palermo.jpg" style="object-fit: contain;width: 100%;height: 300px;">
+                                        </li>
+                                        <li data-flip-title="Magdalena" data-flip-category="Barranquilla" style="width:300px;height:300px">
+                                            <img src="images/puertos/Barranquilla/Port Magdalena.jpg" style="object-fit: contain;width: 100%;height: 300px;">
+                                        </li>
+                                        <li data-flip-title="Buenaventura" data-flip-category="Buenaventura" style="width:300px;height:300px">
+                                            <img src="images/puertos/Buenaventura/Sociedad Portuaria Regional de Buenaventura.jpg" style="object-fit: contain;width: 100%;height: 300px;">
+                                        </li>
+                                        <li data-flip-title="Algranel" data-flip-category="Cartagena" style="width:300px;height:300px">
+                                            <img src="images/puertos/Cartagena/Algranel Terminal.jpg" style="object-fit: contain;width: 100%;height: 300px;">
+                                        </li>
+                                        <li data-flip-title="LPG" data-flip-category="Cartagena" style="width:300px;height:300px">
+                                            <img src="images/puertos/Cartagena/LPG Terminal.jpg" style="object-fit: contain;width: 100%;height: 300px;">
+                                        </li>
+                                        <li data-flip-title="Nestor Pineda" data-flip-category="Cartagena" style="width:300px;height:300px">
+                                            <img src="images/puertos/Cartagena/Nestor Pineda Terminal.jpg" style="object-fit: contain;width: 100%;height: 300px;">
+                                        </li>
+                                        <li data-flip-title="Oil Tanking" data-flip-category="Cartagena" style="width:300px;height:300px">
+                                            <img src="images/puertos/Cartagena/Oil Tanking.jpg" style="object-fit: contain;width: 100%;height: 300px;">
+                                        </li>
+                                        <li data-flip-title="Puerto Bahia" data-flip-category="Cartagena" style="width:300px;height:300px">
+                                            <img src="images/puertos/Cartagena/Puerto Bahia Terminal.jpg" style="object-fit: contain;width: 100%;height: 300px;">
+                                        </li>
+                                        <li data-flip-title="Mamonal" data-flip-category="Cartagena" style="width:300px;height:300px">
+                                            <img src="images/puertos/Cartagena/Puerto Mamonal.jpg" style="object-fit: contain;width: 100%;height: 300px;">
+                                        </li>
+                                        <li data-flip-title="Refineria" data-flip-category="Cartagena" style="width:300px;height:300px">
+                                            <img src="images/puertos/Cartagena/Refineria Terminal.jpg" style="object-fit: contain;width: 100%;height: 300px;">
+                                        </li>
+                                        <li data-flip-title="Olefinas y Derivados" data-flip-category="Cartagena" style="width:300px;height:300px">
+                                            <img src="images/puertos/Cartagena/Sociedad Portuaria de Olefinas y Derivados.jpg" style="object-fit: contain;width: 100%;height: 300px;">
+                                        </li>
+                                        <li data-flip-title="Vopak" data-flip-category="Cartagena" style="width:300px;height:300px">
+                                            <img src="images/puertos/Cartagena/Vopak.jpg" style="object-fit: contain;width: 100%;height: 300px;">
+                                        </li>
+                                        <li data-flip-title="TLU 1" data-flip-category="Coveñas" style="width:300px;height:300px">
+                                            <img src="images/puertos/Coveñas/TLU 1.jpg" style="object-fit: contain;width: 100%;height: 300px;">
+                                        </li>
+                                        <li data-flip-title="TLU 2" data-flip-category="Coveñas" style="width:300px;height:300px">
+                                            <img src="images/puertos/Coveñas/TLU 2.jpg" style="object-fit: contain;width: 100%;height: 300px;">
+                                        </li>
+                                        <li data-flip-title="TLU 3" data-flip-category="Coveñas" style="width:300px;height:300px">
+                                            <img src="images/puertos/Coveñas/TLU 3.jpg" style="object-fit: contain;width: 100%;height: 300px;">
+                                        </li>
+                                        <li data-flip-title="Coal Pier" data-flip-category="Puerto Bolivar" style="width:300px;height:300px">
+                                            <img src="images/puertos/Puerto Bolivar/Coal Pier.jpg" style="object-fit: contain;width: 100%;height: 300px;">
+                                        </li>
+
+                                        <li data-flip-title="Commodities Pier" data-flip-category="Puerto Bolivar" style="width:300px;height:300px">
+                                            <img src="images/puertos/Puerto Bolivar/Commodities Pier.jpg" style="object-fit: contain;width: 100%;height: 300px;">
+                                        </li>
+                                        <li data-flip-title="Carbosan" data-flip-category="Santa Marta" style="width:300px;height:300px">
+                                            <img src="images/puertos/Santa Marta/Carbosan.jpg" style="object-fit: contain;width: 100%;height: 300px;">
+                                        </li>
+                                        <li data-flip-title="Ecopetrol" data-flip-category="Santa Marta" style="width:300px;height:300px">
+                                            <img src="images/puertos/Santa Marta/Ecopetrol SPM Pozos Colorados.jpg" style="object-fit: contain;width: 100%;height: 300px;">
+                                        </li>
+                                        <li data-flip-title="Drumond" data-flip-category="Santa Marta" style="width:300px;height:300px">
+                                            <img src="images/puertos/Santa Marta/Puerto Drumond.jpg" style="object-fit: contain;width: 100%;height: 300px;">
+                                        </li>
+                                        <li data-flip-title="Nuevo" data-flip-category="Santa Marta" style="width:300px;height:300px">
+                                            <img src="images/puertos/Santa Marta/Puerto Nuevo.jpg" style="object-fit: contain;width: 100%;height: 300px;">
+                                        </li>
+                                        <li data-flip-title="Santa Marta" data-flip-category="Santa Marta" style="width:300px;height:300px">
+                                            <img src="images/puertos/Santa Marta/Sociedad Portuaria de Santa Marta.jpg" style="object-fit: contain;width: 100%;height: 300px;">
+                                        </li>
+                                        <li data-flip-title="Sea Berth" data-flip-category="Tumaco" style="width:300px;height:300px">
+                                            <img src="images/puertos/Tumaco/Ecopetrol Sea Berth.jpg" style="object-fit: contain;width: 100%;height: 300px;">
+                                        </li>
+                                        
+                                        
+                                    </ul>
+                                </div>
+
+                                <script>
+                                    var carousel = $("#carousel2").flipster({
+                                        style: 'carousel',
+                                        spacing: -0.5,
+                                        nav: true,
+                                        buttons: true,
+                                        scrollwheel: false,
+                                    });
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            <div class="slide">
+                <img src="4.jpg" alt="">
+            </div>
+            <div class="slide">
+                <img src="5.jpg" alt="">
+            </div>
+        </div>
+
+    </div>
+    
+    <marquee behavior="scroll" style="color: white; z-index: 1;
+    position: sticky; bottom: 0vh;" direction="left">"Quality is never an accident; it is always the result of high
+        intention, sincere effort, intelligent direction and skillful execution;
+        it represents the wise choice of many alternatives." (William A. Foster)</marquee>
+    <script src="js/jquery.js"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/fullpage.min.js"></script>
+
+    <script src="js/scrolloverflow.js"></script>
+
+    <script src="js/owl.carousel.min.js"></script>
+
+    <script src="js/jquery.inview.min.js"></script>
+
+    <script src="js/form.js"></script>
+
+    <script src="js/custom.js"></script>
+
+    <script src="js/services.js"></script>
+
+    <script>
+        setWeather();
+        setWorldTime();
+        setOilPrices();
+        var intervalID = window.setInterval(setWorldTime, 60000);
+    </script>
+
+    <script>
+ 
+
+
+
+
+        $(function () {
+            var texto = "Sailing the extra mile";
+            maquina("typer", texto, 100, 0);
+        });
+
+        function maquina(contenedor, texto, intervalo, n) {
+            var i = 0,
+                // Creamos el timer
+                timer = setInterval(function () {
+                    if (i < texto.length) {
+                        // Si NO hemos llegado al final del texto..
+                        // Vamos añadiendo letra por letra y la _ al final.
+                        $("#" + contenedor).html(texto.substr(0, i++) + "_");
+                    } else {
+                        // En caso contrario..
+                        // Salimos del Timer y quitamos la barra baja (_)
+                        clearInterval(timer);
+                        $("#" + contenedor).html(texto);
+                        // Auto invocamos la rutina n veces (0 para infinito)
+                        if (--n != 0) {
+                            setTimeout(function () {
+                                maquina(contenedor, texto, intervalo, n);
+                            }, 3600);
+                        }
+                    }
+                }, intervalo);
+        };
+    </script>
+    <script>
+  
+
+
+        function prueba(val) {
+
+            if (val == 1) {
+                document.getElementsByClassName("s1")[0].setAttribute("style", "margin-left: 0");
+                document.getElementById("fullpage").setAttribute("style", "height: 100%; position: relative; touch-action: none; transform: translateX(0px);");
+
+            }
+            if (val == 2) {
+                document.getElementsByClassName("s1")[0].setAttribute("style", "margin-left: -20%");
+                document.getElementById("fullpage").setAttribute("style", "height: 100%; position: relative; touch-action: none; transform: translateX(0px); ")
+                
+            }
+            if (val == 3) {
+                document.getElementsByClassName("s1")[0].setAttribute("style", "margin-left: -40%");
+                document.getElementById("fullpage").setAttribute("style", "height: 100%; position: relative; touch-action: none; transform: translateX(0px); ");
+              
+            }
+            if (val == 4) {
+                document.getElementsByClassName("s1")[0].setAttribute("style", "margin-left: -60%");
+                document.getElementById("fullpage").setAttribute("style", "height: 100%; position: relative; touch-action: none; transform: translateX(0px); ")
+            }
+            if (val == 5) {
+                document.getElementsByClassName("s1")[0].setAttribute("style", "margin-left: -80%");
+                document.getElementById("fullpage").setAttribute("style", "height: 100%; position: relative; touch-action: none; transform: translateX(0px); ")
+            }
+
+
+
+
+
+
+
+        }
+    </script>
+</body>
+
+</html>
+
+</html>
